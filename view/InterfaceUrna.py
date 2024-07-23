@@ -29,11 +29,11 @@ class InterfaceUrna:
         self.formInicial = tk.Frame(self.root)
         self.formInicial.pack(expand=True)
 
-        self.mensagem_bemvindo = tk.Label(self.formInicial, text="Bem-vindo(a) a nossa urna eletrônica. \n Você é nosso "+ str(self.usuarioAtual) +"° entrevistado")
-        self.mensagem_bemvindo.pack(pady=10)
+        self.mensagem_bemvindo = tk.Label(self.formInicial, text="Bem-vindo(a) a nossa urna eletrônica. \n Você é nosso "+ str(self.usuarioAtual) +"° entrevistado", font=("Helvetica", 20))
+        self.mensagem_bemvindo.pack(pady=200)
 
-        botaoStart = tk.Button(self.formInicial, text="Começar", command=self.atualizaInterface)
-        botaoStart.pack(pady=10)
+        botaoStart = tk.Button(self.formInicial, text="Começar", command=self.atualizaInterface, font=("Helvetica", 20), height=2, width=20)
+        botaoStart.pack()
 
         ## Cria um frame com com as perguntas e botões
         self.questionForm = tk.Frame(self.root)
@@ -86,11 +86,11 @@ class InterfaceUrna:
         self.formFinal = tk.Frame(self.root)
         self.formFinal.pack(expand=True)
 
-        mensagem_final = tk.Label(self.formFinal, text="Muito obrigado por participar da nossa pesquisa.")
-        mensagem_final.pack(pady=10)
+        mensagem_final = tk.Label(self.formFinal, text="Muito obrigado por participar da nossa pesquisa.", font=("Helvetica", 20))
+        mensagem_final.pack(pady=200)
 
-        botaoStart = tk.Button(self.formFinal, text="Próximo votante", command=self.atualizaInterface)
-        botaoStart.pack(pady=10)
+        botaoStart = tk.Button(self.formFinal, text="Próximo votante", command=self.atualizaInterface, font=("Helvetica", 20),height=2, width=20)
+        botaoStart.pack()
 
         self.atualizaInterface()
 
