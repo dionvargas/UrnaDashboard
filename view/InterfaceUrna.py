@@ -19,7 +19,11 @@ class InterfaceUrna:
         self.root = tk.Tk()
 
         self.root.title("Urna Digital")
-        self.root.geometry("600x780")  # Define o tamanho da tela
+        self.root.geometry("600x980")  # Define o tamanho da tela
+
+        logo = ImageTk.PhotoImage(Image.open("./static/images/senaiFundo.jpg"))
+        w = tk.Label(self.root, image=logo)
+        w.pack()
 
         ## Cria um frame com com as a mensagem inicial
         self.formInicial = tk.Frame(self.root)
