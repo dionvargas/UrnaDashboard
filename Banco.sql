@@ -31,28 +31,28 @@ INSERT INTO Questoes (Pergunta, AlternativaA, AlternativaB, AlternativaC, Altern
 SELECT * FROM Questoes;
 
 
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('1', 'A', '1', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('2', 'A', '1', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('3', 'A', '1', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('4', 'A', '1', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('5', 'A', '1', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('1', 'A', '1', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('2', 'A', '1', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('3', 'A', '1', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('4', 'A', '1', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('5', 'A', '1', NOW());
 
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('1', 'B', '2', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('2', 'B', '2', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('3', 'B', '2', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('4', 'B', '2', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('5', 'B', '2', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('1', 'B', '2', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('2', 'B', '2', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('3', 'B', '2', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('4', 'B', '2', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('5', 'B', '2', NOW());
 
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('1', 'C', '3', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('2', 'C', '3', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('3', 'C', '3', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('4', 'C', '3', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('5', 'C', '3', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('1', 'C', '3', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('2', 'C', '3', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('3', 'C', '3', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('4', 'C', '3', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('5', 'C', '3', NOW());
 
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('1', 'D', '4', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('2', 'D', '4', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('3', 'D', '4', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('4', 'D', '4', NOW());
-INSERT INTO votos (id_questao, voto, usuario, dataHora) VALUES ('5', 'D', '4', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('1', 'D', '4', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('2', 'D', '4', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('3', 'D', '4', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('4', 'D', '4', NOW());
+INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('5', 'D', '4', NOW());
 
 SELECT * FROM Votos;
