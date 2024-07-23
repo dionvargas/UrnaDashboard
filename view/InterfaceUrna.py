@@ -21,9 +21,9 @@ class InterfaceUrna:
         self.root.title("Urna Digital")
         self.root.geometry("600x980")  # Define o tamanho da tela
 
-        logo = ImageTk.PhotoImage(Image.open("./static/images/senaiFundo.jpg"))
-        w = tk.Label(self.root, image=logo)
-        w.pack()
+        imageLogo = ImageTk.PhotoImage(Image.open("./static/images/senaiFundo.jpg"))
+        logo = tk.Label(self.root, image=imageLogo)
+        logo.pack(pady=20)
 
         ## Cria um frame com com as a mensagem inicial
         self.formInicial = tk.Frame(self.root)
@@ -40,14 +40,14 @@ class InterfaceUrna:
         self.questionForm.pack(expand=True)  # Expande o frame junto com a janela
 
         # Título superior
-        self.titulo = tk.Label(self.questionForm, text="Pergunta", font=("Helvetica", 16))
+        self.titulo = tk.Label(self.questionForm, text="Pergunta", font=("Helvetica", 20))
         self.titulo.pack(pady=10)
 
         # Imagens para os botões
-        imagem1 = Image.open("./static/images/semImagem.jpeg")
-        imagem2 = Image.open("./static/images/semImagem.jpeg")
-        imagem3 = Image.open("./static/images/semImagem.jpeg")
-        imagem4 = Image.open("./static/images/semImagem.jpeg")
+        imagem1 = Image.open("./static/images/semImagem.jpeg").resize((250, 250))
+        imagem2 = Image.open("./static/images/semImagem.jpeg").resize((250, 250))
+        imagem3 = Image.open("./static/images/semImagem.jpeg").resize((250, 250))
+        imagem4 = Image.open("./static/images/semImagem.jpeg").resize((250, 250))
 
         # Converter imagens para o formato suportado pelo tkinter
         img1 = ImageTk.PhotoImage(imagem1)
@@ -79,8 +79,8 @@ class InterfaceUrna:
         self.botao4.pack(side="left")
 
         # Rodapé
-        self.rodape = tk.Label(self.questionForm, text="Pergunta x/" + str(self.qtdQuestoes))
-        self.rodape.pack(pady=10)
+        self.rodape = tk.Label(self.questionForm, text="Pergunta x/" + str(self.qtdQuestoes), font=("Helvetica", 16))
+        self.rodape.pack(pady=20)
 
         ## Cria um frame com com as a mensagem final
         self.formFinal = tk.Frame(self.root)
@@ -106,10 +106,10 @@ class InterfaceUrna:
             nova_imagem4 = Image.open("./static/images/"+str(nova_questao.id)+"/d.png").resize((250, 250))
         else:
             # Imagens para os botões
-            nova_imagem1 = Image.open("./static/images/semImagem.jpeg")
-            nova_imagem2 = Image.open("./static/images/semImagem.jpeg")
-            nova_imagem3 = Image.open("./static/images/semImagem.jpeg")
-            nova_imagem4 = Image.open("./static/images/semImagem.jpeg")
+            nova_imagem1 = Image.open("./static/images/semImagem.jpeg").resize((250, 250))
+            nova_imagem2 = Image.open("./static/images/semImagem.jpeg").resize((250, 250))
+            nova_imagem3 = Image.open("./static/images/semImagem.jpeg").resize((250, 250))
+            nova_imagem4 = Image.open("./static/images/semImagem.jpeg").resize((250, 250))
 
         # Atualize as imagens dos botões
         img1 = ImageTk.PhotoImage(nova_imagem1)
