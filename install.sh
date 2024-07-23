@@ -19,3 +19,4 @@ pip install flask --break-system-packages
 pip install mysql-connector-python --break-system-packages
 pip install matplotlib --break-system-packages
 pip install numpy --break-system-packages
+pip install pillow --break-system-packages

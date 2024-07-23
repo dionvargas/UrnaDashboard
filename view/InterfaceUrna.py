@@ -19,7 +19,7 @@ class InterfaceUrna:
         self.root = tk.Tk()
 
         self.root.title("Urna Digital")
-        self.root.geometry("450x560")  # Define o tamanho da tela
+        self.root.geometry("600x780")  # Define o tamanho da tela
 
         ## Cria um frame com com as a mensagem inicial
         self.formInicial = tk.Frame(self.root)
@@ -96,10 +96,10 @@ class InterfaceUrna:
 
         if(os.path.exists("./static/images/" + str(nova_questao.id) + "/")):
             # Carregue as novas imagens (se necessário)
-            nova_imagem1 = Image.open("./static/images/"+str(nova_questao.id)+"/a.png")
-            nova_imagem2 = Image.open("./static/images/"+str(nova_questao.id)+"/b.png")
-            nova_imagem3 = Image.open("./static/images/"+str(nova_questao.id)+"/c.png")
-            nova_imagem4 = Image.open("./static/images/"+str(nova_questao.id)+"/d.png")
+            nova_imagem1 = Image.open("./static/images/"+str(nova_questao.id)+"/a.png").resize((250, 250))
+            nova_imagem2 = Image.open("./static/images/"+str(nova_questao.id)+"/b.png").resize((250, 250))
+            nova_imagem3 = Image.open("./static/images/"+str(nova_questao.id)+"/c.png").resize((250, 250))
+            nova_imagem4 = Image.open("./static/images/"+str(nova_questao.id)+"/d.png").resize((250, 250))
         else:
             # Imagens para os botões
             nova_imagem1 = Image.open("./static/images/semImagem.jpeg")
@@ -118,7 +118,7 @@ class InterfaceUrna:
         self.botao3.config(image=img3, text=nova_questao.alternativaC)
         self.botao4.config(image=img4, text=nova_questao.alternativaD)
 
-        self.rodape = tk.Label(self.questionForm, text="Pergunta "+ str(nova_questao.id) + "/" + str(self.qtdQuestoes))
+        self.rodape.configure(text="Pergunta "+ str(nova_questao.id) + "/" + str(self.qtdQuestoes))
 
         # Redesenha a interface
         self.root.update()
