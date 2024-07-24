@@ -1,6 +1,6 @@
 .header {
   color: white;
-  background-color: blue;
+  background-color: #003f72;
 }
 
 .footer{
@@ -8,7 +8,7 @@
   height: 35px;
   text-align: center;
   color: white;
-  background-color: rgb(27, 91, 255);
+  background-color: #003f72;
 }
 
 .circle{

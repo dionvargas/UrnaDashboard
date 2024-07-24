@@ -13,9 +13,9 @@ print("Iniciando o programa...")
 
 # Configurações do banco de dados
 db_manager = DatabaseManager(
-    #host="192.168.1.2",
-    host="localhost",
-    user="eleitor",
+    host="192.168.1.2",
+    #host="localhost",
+    user="root",
     password="123456",
     database="urna"
 )
