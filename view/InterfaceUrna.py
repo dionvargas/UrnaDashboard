@@ -89,7 +89,7 @@ class InterfaceUrna:
         mensagem_final = tk.Label(self.formFinal, text="Muito obrigado por participar da nossa pesquisa.", font=("Helvetica", 20))
         mensagem_final.pack(pady=200)
 
-        botaoStart = tk.Button(self.formFinal, text="Próximo votante", command=self.atualizaInterface, font=("Helvetica", 20),height=2, width=20)
+        botaoStart = tk.Button(self.formFinal, text="Próximo participante", command=self.atualizaInterface, font=("Helvetica", 20),height=2, width=20)
         botaoStart.pack()
 
         self.atualizaInterface()
