@@ -57,5 +57,28 @@ INSERT INTO Votos (id_questao, voto, usuario, dataHora) VALUES ('5', 'D', '4', N
 
 SELECT * FROM Votos;
 
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
-FLUSH PRIVILEGES;
+DELIMITER //
+
+CREATE PROCEDURE recreate_user()
+BEGIN
+    DECLARE user_exists INT;
+
+    -- Verifica se o usuário já existe
+    SELECT COUNT(*) INTO user_exists FROM mysql.user WHERE user = 'eleitor' AND host = '%';
+
+    -- Se o usuário existir, exclua-o
+    IF user_exists > 0 THEN
+        DROP USER 'eleitor'@'%';
+    END IF;
+
+    -- Crie o usuário novamente
+    CREATE USER 'eleitor'@'%' IDENTIFIED BY '123456';
+	GRANT ALL PRIVILEGES ON *.* TO 'eleitor'@'%' WITH GRANT OPTION;
+	FLUSH PRIVILEGES;
+END //
+
+DELIMITER ;
+
+CALL recreate_user();
+
+SELECT User, Host FROM mysql.user;
