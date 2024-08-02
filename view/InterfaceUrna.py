@@ -40,7 +40,7 @@ class InterfaceUrna:
         self.questionForm.pack(expand=True)  # Expande o frame junto com a janela
 
         # Título superior
-        self.titulo = tk.Label(self.questionForm, text="Pergunta", font=("Helvetica", 20))
+        self.titulo = tk.Label(self.questionForm, text="Pergunta", font=("Helvetica", 20), wraplength=580)
         self.titulo.pack(pady=10)
 
         # Imagens para os botões
