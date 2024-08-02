@@ -29,10 +29,10 @@ INSERT INTO Questoes (Pergunta, AlternativaA, AlternativaB, AlternativaC, Altern
 INSERT INTO Questoes (Pergunta, AlternativaA, AlternativaB, AlternativaC, AlternativaD) VALUES ('Qual é a sua área de interesse principal?', 'Tecnologia e Inovação', 'Design e Artes', 'Indústria e Engenharia', 'Saúde e Segurança');
 INSERT INTO Questoes (Pergunta, AlternativaA, AlternativaB, AlternativaC, AlternativaD) VALUES ('Qual seu nível de conhecimento em tecnologia?', 'Básico', 'Intermediário', 'Avançado', 'Super avançado');
 INSERT INTO Questoes (Pergunta, AlternativaA, AlternativaB, AlternativaC, AlternativaD) VALUES ('Você tem contato com programação?', 'Trabalho e estudo', 'Só trabalho', 'Só estudo', 'Não tenho contato');
-INSERT INTO Questoes (Pergunta, AlternativaA, AlternativaB, AlternativaC, AlternativaD) VALUES ('Qual é o seu objetivo ao visitar o Mundo SENAI?', 'Conhecer as oportunidades de cursos', 'Explorar as inovações tecnológicas', 'Participar de atividades interativas', 'Obter informações sobre parcerias e empresas');
+INSERT INTO Questoes (Pergunta, AlternativaA, AlternativaB, AlternativaC, AlternativaD) VALUES ('Qual é o seu objetivo ao visitar o Mundo SENAI?', 'Conhecer as oportunidades de cursos', 'Explorar as inovações tecnológicas', 'Participar de atividades interativas', 'Obter informações de empresas');
 INSERT INTO Questoes (Pergunta, AlternativaA, AlternativaB, AlternativaC, AlternativaD) VALUES ('Como você conheceu o Mundo SENAI?', 'Redes Sociais', 'Indicação de amigos/familiares', 'Publicidade (cartazes, flyers, etc.)', 'Pesquisa na internet');
 INSERT INTO Questoes (Pergunta, AlternativaA, AlternativaB, AlternativaC, AlternativaD) VALUES ('Quais recursos ou atividades você mais valoriza em eventos como o Mundo SENAI?', 'Workshops e Palestras', 'Exposições e Demonstrações', 'Oportunidades de networking', 'Sessões interativas e práticas');
-INSERT INTO Questoes (Pergunta, AlternativaA, AlternativaB, AlternativaC, AlternativaD) VALUES ('Você valoriza o reconhecimento de instituições em eventos como o Mundo SENAI?', 'Muito importante, fator decisivo.', 'Importante, mas não único.', 'Pouco importante, considerando outros aspectos.', 'Não é importante, o evento em si é relevante.');
+INSERT INTO Questoes (Pergunta, AlternativaA, AlternativaB, AlternativaC, AlternativaD) VALUES ('Você valoriza o reconhecimento de instituições em eventos como o Mundo SENAI?', 'Muito importante, fator decisivo.', 'Importante, mas não único.', 'Pouco importante.', 'Não é importante.');
 SELECT * FROM Questoes;
 
 
